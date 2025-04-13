@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@layer base {
+  .bg-grid {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+  body {
+    @apply min-h-screen;
+  }
+
+  .table-hover tr:hover {
+    @apply bg-gray-100 dark:bg-gray-700 transition-colors duration-200;
+  }
+
+  .gradient-btn {
+    @apply bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105;
+  }
+
+  /* global.css */
+  .shine-button {
+    position: relative;
+    overflow: hidden;
+    border-radius: 9999px; /* Ensuring smooth rounded corners */
+  }
+
+  .shine-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 250%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.4),
+      transparent 70%
+    );
+    transform: skewX(-25deg); /* More tilted for a sharper effect */
+    animation: buttonShine 1.5s infinite linear;
+  }
+
+  @keyframes buttonShine {
+    0% {
+      left: -150%;
+    }
+    100% {
+      left: 150%;
+    }
+  }
+}
+/* <div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-[-20%] right-0 top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div><div class="absolute bottom-0 right-[-20%] top-[-10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"></div></div> */
