@@ -1,10 +1,11 @@
-// pages/contests.tsx
+// app/contests/page.tsx
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { fetchContests } from "@/lib/contests";
-import PastContestsTable from "@/components/PastContestsTable"; // New client component
-import { getDuration, getTimeLeft, formatDate } from "./utils"; // Move helpers to a utils file
+import PastContestsTable from "@/components/PastContestsTable";
+import { getDuration, getTimeLeft, formatDate } from "./utils";
 import { PlatformLogo } from "@/components/PlatformLogo";
+import { type NextPage } from "next";
 
 interface Contest {
     id: string;
@@ -25,9 +26,19 @@ interface ContestFilters {
     userId?: string;
 }
 
-export default async function ContestsPage({ searchParams }: { searchParams: { [key: string]: string } }) {
+const ContestsPage: NextPage<{
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}> = async ({ searchParams }) => {
     const session = await getServerSession(authOptions);
-    // const isAdmin = session?.user?.role === "ADMIN";
+    const resolvedSearchParams = await searchParams;
+
+    // Normalize searchParams to { [key: string]: string }
+    const normalizedSearchParams = Object.fromEntries(
+        Object.entries(resolvedSearchParams).map(([key, value]) => [
+            key,
+            Array.isArray(value) ? value.join(",") : value ?? "",
+        ])
+    ) as { [key: string]: string };
 
     const upcomingFilters: ContestFilters = {
         duration: "all",
@@ -84,8 +95,10 @@ export default async function ContestsPage({ searchParams }: { searchParams: { [
             {/* Past Contests Section */}
             <section>
                 <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200">Past Contests</h2>
-                <PastContestsTable session={session} initialSearchParams={searchParams} />
+                <PastContestsTable session={session} initialSearchParams={normalizedSearchParams} />
             </section>
         </div>
     );
-}
+};
+
+export default ContestsPage;
