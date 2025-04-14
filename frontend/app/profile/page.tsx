@@ -5,7 +5,7 @@ import PlatformSelector from "@/components/PlatformSelector";
 import QuestionsPieChart from "@/components/QuestionsPieChart";
 import RatingGraph from "@/components/RatingGraph";
 import ProfileStats from "@/components/ProfileStats";
-import axios, { isAxiosError } from "axios"; // Added isAxiosError for better error handling
+import axios, { isAxiosError } from "axios";
 import { toast } from "react-toastify";
 import { ProfileData } from "@/lib/profile";
 import { useSession } from "next-auth/react";
@@ -16,7 +16,7 @@ interface PlatformData {
 }
 
 export default function Profile() {
-    const { data: session, status } = useSession(); // Added status to check session state
+    const { data: session, status } = useSession();
     const [platforms, setPlatforms] = useState<PlatformData[]>([]);
     const [selectedPlatform, setSelectedPlatform] = useState<string>("");
     const [profiles, setProfiles] = useState<ProfileData[]>([]);
@@ -226,10 +226,18 @@ export default function Profile() {
                     {loading ? (
                         <>
                             <div className="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg p-6 w-full h-[300px] flex items-center justify-center">
-                                <p className="text-gray-500 dark:text-gray-300">Loading...</p>
+                                <div className="flex space-x-2">
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0s" }}></div>
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></div>
+                                </div>
                             </div>
                             <div className="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg p-6 w-full h-[400px] flex items-center justify-center">
-                                <p className="text-gray-500 dark:text-gray-300">Loading...</p>
+                                <div className="flex space-x-2">
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0s" }}></div>
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></div>
+                                </div>
                             </div>
                         </>
                     ) : (
@@ -250,10 +258,18 @@ export default function Profile() {
                     {loading ? (
                         <>
                             <div className="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg p-6 w-full h-[500px] flex items-center justify-center">
-                                <p className="text-gray-500 dark:text-gray-300">Loading...</p>
+                                <div className="flex space-x-2">
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0s" }}></div>
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></div>
+                                </div>
                             </div>
                             <div className="bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg p-6 w-full h-[200px] flex items-center justify-center">
-                                <p className="text-gray-500 dark:text-gray-300">Loading...</p>
+                                <div className="flex space-x-2">
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0s" }}></div>
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0.2s" }}></div>
+                                    <div className="w-3 h-3 bg-gray-500 dark:bg-gray-300 rounded-full animate-bounce" style={{ animationDelay: "0.4s" }}></div>
+                                </div>
                             </div>
                         </>
                     ) : (

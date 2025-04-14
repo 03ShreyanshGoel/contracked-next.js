@@ -1,6 +1,6 @@
 // pages/contests.tsx
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { fetchContests } from "@/lib/contests";
 import PastContestsTable from "@/components/PastContestsTable"; // New client component
 import { getDuration, getTimeLeft, formatDate } from "./utils"; // Move helpers to a utils file

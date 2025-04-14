@@ -4,21 +4,24 @@ import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
 import { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
-import { ChevronDown, User, LogOut, Menu, X } from "lucide-react";
+import { ChevronDown, User, LogOut, Menu, X, Trophy, LogIn, Mail } from "lucide-react";
 import Image from "next/image";
 
 export default function Navbar() {
     const { data: session } = useSession();
     console.log("session in navbar:", session);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
-    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); // Added 'const' here
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
         <nav className="w-full bg-gradient-to-r from-gray-800 to-gray-900 dark:from-gray-900 dark:to-black text-white shadow-lg transition-all duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between py-4">
                 {/* Logo, ThemeSwitcher, and Hamburger Section */}
                 <div className="flex items-center justify-between w-full md:w-auto">
-                    <Link href="/" className="text-2xl font-extrabold tracking-tight hover:text-gray-200 transition-colors duration-200">
+                    <Link
+                        href="/"
+                        className="text-2xl font-extrabold tracking-tight hover:text-gray-200 transition-colors duration-200"
+                    >
                         <span className="text-black text-xs rounded-full bg-gray-50 mx-2 px-1.5 py-0.5">{"<Ct />"}</span>
                         ConTracked
                     </Link>
@@ -37,7 +40,7 @@ export default function Navbar() {
                 {/* Navigation Items (Collapsible on Mobile) */}
                 <div className="flex flex-col md:flex-row items-center w-full md:w-auto md:space-x-10 mt-4 md:mt-0">
                     {/* ThemeSwitcher for Desktop - Left of Contests */}
-                    <div className="hidden md:flex items-center mr-4">
+                    <div className="hidden md:flex items-center mr-8">
                         <ThemeSwitcher />
                     </div>
                     <div
@@ -46,28 +49,37 @@ export default function Navbar() {
                     >
                         <Link
                             href="/contests"
-                            className="text-lg font-medium hover:text-gray-200 transition-colors duration-200 py-2 px-1"
+                            className="text-lg font-medium hover:text-gray-200 transition-colors duration-200 py-2 px-1 flex items-center"
                             onClick={() => setMobileMenuOpen(false)}
                         >
-                            Contests
+                            <Trophy className="w-5 h-5 mr-2" /> Contests
                         </Link>
-
+                        {session?.user && (
+                            <Link
+                                href="/profile"
+                                className="text-lg font-medium hover:text-gray-200 transition-colors duration-200 py-2 px-1 flex items-center"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                <User className="w-5 h-5 mr-2" /> Profile
+                            </Link>
+                        )}
                         {session?.user ? (
                             isMobileMenuOpen ? (
                                 <>
                                     <Link
                                         href="/profile"
-                                        className="text-lg font-medium hover:text-gray-200 transition-colors duration-200 py-2 px-1"
+                                        className="text-lg font-medium hover:text-gray-200 transition-colors duration-200 py-2 px-1 flex items-center"
                                         onClick={() => setMobileMenuOpen(false)}
                                     >
-                                        <User className="w-5 h-5 mr-2 inline" /> Profile
+
+                                        <Mail className="w-5 h-5 mr-2" /> {session.user.email}
                                     </Link>
                                     <button
                                         onClick={() => {
                                             signOut({ callbackUrl: "/" });
                                             setMobileMenuOpen(false);
                                         }}
-                                        className="text-lg font-medium hover:text-gray-200 transition-colors duration-200 py-2 px-1 text-left"
+                                        className="text-lg font-medium hover:text-gray-200 transition-colors duration-200 py-2 px-1 text-left flex items-center"
                                     >
                                         <LogOut className="w-5 h-5 mr-2 inline" /> Sign Out
                                     </button>
@@ -94,7 +106,7 @@ export default function Navbar() {
                                         <ChevronDown className="w-5 h-5" />
                                     </button>
                                     {isDropdownOpen && (
-                                        <div className="absolute right-0 mt-1 md:mt-3 w-full md:w-48 bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg shadow-xl z-20">
+                                        <div className="absolute right-0 mt-1 md:mt-3 w-full md:w-90 bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg shadow-xl z-20">
                                             <Link
                                                 href="/profile"
                                                 className="flex items-center px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 rounded-t-lg"
@@ -103,7 +115,7 @@ export default function Navbar() {
                                                     setMobileMenuOpen(false);
                                                 }}
                                             >
-                                                <User className="w-5 h-5 mr-2" /> Profile
+                                                <Mail className="w-5 h-5 mr-2" /> {session.user.email}
                                             </Link>
                                             <button
                                                 onClick={() => {
@@ -121,10 +133,10 @@ export default function Navbar() {
                         ) : (
                             <Link
                                 href="/signin"
-                                className="text-lg font-medium hover:text-gray-200 transition-colors duration-200 py-2 px-1"
+                                className="text-lg font-medium hover:text-gray-200 transition-colors duration-200 py-2 px-1 flex items-center"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
-                                Sign In
+                                <LogIn className="w-5 h-5 mr-2" /> Sign In
                             </Link>
                         )}
                     </div>

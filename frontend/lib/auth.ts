@@ -1,5 +1,5 @@
 // frontend/lib/auth.ts
-import NextAuth, { NextAuthOptions, User as NextAuthUser } from "next-auth";
+import { NextAuthOptions, User as NextAuthUser } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import axios, { isAxiosError } from "axios";
 import { AuthResponse } from "@/types/next-auth";
@@ -74,5 +74,3 @@ export const authOptions: NextAuthOptions = {
     },
     secret: process.env.NEXTAUTH_SECRET,
 };
-
-export default NextAuth(authOptions);

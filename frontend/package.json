@@ -23,7 +23,7 @@
     "chartjs-adapter-date-fns": "^3.0.0",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.483.0",
-    "next": "15.2.3",
+    "next": "^15.3.0",
     "next-auth": "^4.24.11",
     "next-themes": "^0.4.6",
     "node-cron": "^3.0.3",

@@ -166,16 +166,16 @@ interface QuestionsPieChartProps {
 
 const colorMap: Record<string, { bg: string; border: string }> = {
     LeetCode: {
-        bg: "rgba(255, 153, 0, 0.4)",
-        border: "rgba(255, 153, 0, 0.8)",
+        bg: "rgba(255, 153, 0, 0.5)",
+        border: "rgba(255, 153, 0, 1)",
     },
     CodeChef: {
-        bg: "rgba(66, 133, 244, 0.4)",
-        border: "rgba(66, 133, 244, 0.8)",
+        bg: "rgba(66, 133, 244, 0.5)",
+        border: "rgba(66, 133, 244, 1)",
     },
     Codeforces: {
-        bg: "rgba(234, 67, 53, 0.4)",
-        border: "rgba(234, 67, 53, 0.8)",
+        bg: "rgba(234, 67, 53, 0.5)",
+        border: "rgba(234, 67, 53, 1)",
     },
 };
 

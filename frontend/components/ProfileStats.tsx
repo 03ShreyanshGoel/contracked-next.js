@@ -101,17 +101,17 @@ interface ProfileStatsProps {
 export default function ProfileStats({ profile, platform }: ProfileStatsProps) {
     const platformColors: Record<string, { bg: string; border: string }> = {
         LeetCode: {
-            bg: "rgba(255, 153, 0, 0.2)",
+            bg: "rgba(255, 153, 0, 0.3)",
             // icon: "🧩",
             border: "border-yellow-600",
         },
         CodeChef: {
-            bg: "rgba(66, 133, 244, 0.2)",
+            bg: "rgba(66, 133, 244, 0.3)",
             // icon: "👨‍🍳",
             border: "border-blue-600",
         },
         Codeforces: {
-            bg: "rgba(234, 67, 53, 0.2)",
+            bg: "rgba(234, 67, 53, 0.3)",
             // icon: "🏆",
             border: "border-red-600",
         },
