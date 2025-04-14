@@ -1,7 +1,6 @@
 // frontend/lib/auth.ts
 import NextAuth, { NextAuthOptions, User as NextAuthUser } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
-import { PrismaClient } from "@prisma/client";
 import axios, { isAxiosError } from "axios";
 import { AuthResponse } from "@/types/next-auth";
 
@@ -9,8 +8,6 @@ interface ExtendedUser extends NextAuthUser {
     role?: "ADMIN" | "USER";
     accessToken?: string; // Add accessToken to user
 }
-
-const prisma = new PrismaClient();
 
 export const authOptions: NextAuthOptions = {
     providers: [

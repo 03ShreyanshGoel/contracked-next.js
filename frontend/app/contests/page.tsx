@@ -27,7 +27,7 @@ interface ContestFilters {
 
 export default async function ContestsPage({ searchParams }: { searchParams: { [key: string]: string } }) {
     const session = await getServerSession(authOptions);
-    const isAdmin = session?.user?.role === "ADMIN";
+    // const isAdmin = session?.user?.role === "ADMIN";
 
     const upcomingFilters: ContestFilters = {
         duration: "all",

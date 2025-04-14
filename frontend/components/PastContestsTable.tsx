@@ -8,7 +8,7 @@ import ContestFilter from "@/components/ContestFilter";
 import BookmarkFilter from "@/components/BookmarkFilter";
 import BookmarkButton from "@/components/BookmarkButton";
 import SolutionUploadDialog from "@/components/SolutionUploadDialog";
-import { getDuration, formatDate } from "../app/contests/utils";
+import { formatDate } from "../app/contests/utils";
 import { PlatformLogo } from "./PlatformLogo";
 
 interface Contest {
@@ -73,7 +73,7 @@ export default function PastContestsTable({
     };
 
     // Handle bookmark change by refetching contests
-    const handleBookmarkChange = async (contestId: string, newBookmarkStatus: boolean) => {
+    const handleBookmarkChange = async () => {
         // Simply refetch contests from the server to ensure table re-renders with latest data
         await loadPastContests();
     };
@@ -86,7 +86,7 @@ export default function PastContestsTable({
                     onChange={(checked) => updateFilter("bookmarkedOnly", checked)}
                 />
             )}
-            <ContestFilter session={session} filters={filters} onFilterChange={updateFilter} />
+            <ContestFilter filters={filters} onFilterChange={updateFilter} />
             <div className="overflow-x-auto rounded-lg shadow-md">
                 {loading ? (
                     <p>Loading past contests...</p>

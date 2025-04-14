@@ -22,7 +22,7 @@ export default function SolutionUploadDialog({ contestId }: { contestId: string 
             } else {
                 setMessage("Failed to upload solution.");
             }
-        } catch (error) {
+        } catch {
             setMessage("An error occurred.");
         }
     };

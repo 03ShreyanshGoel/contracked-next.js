@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 
 export interface ProfileData {
     user_id: string;
@@ -26,7 +26,10 @@ export async function fetchProfile(platform: string, userId: string): Promise<Pr
         const response = await axios.get(`http://localhost:5000/api/profiles/${platform}/${userId}`);
         console.log("printing response", response.data);
         return response.data;
-    } catch (error: any) {
-        throw new Error(`Failed to fetch ${platform} profile: ${error.message}`);
+    } catch (error: unknown) {
+        if (error instanceof AxiosError) {
+            throw new Error(`Failed to fetch ${platform} profile: ${error.message}`);
+        }
+        throw new Error(`Failed to fetch ${platform} profile: An unknown error occurred`);
     }
 }
