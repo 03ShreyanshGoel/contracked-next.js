@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-    origin: 'https://contracked.vercel.app/'
+    origin: 'https://contracked.vercel.app'
 }));
 
 app.use(express.json());
