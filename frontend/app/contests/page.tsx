@@ -50,7 +50,7 @@ const ContestsPage: NextPage<{
     let upcomingContests: Contest[] = [];
     try {
         const allContests = await fetchContests(upcomingFilters);
-        upcomingContests = allContests.filter((c) => c.status === "UPCOMING");
+        upcomingContests = allContests.filter((c) => c.status === "UPCOMING").sort((a, b) => new Date(a.startTime).getTime() - new Date(b.startTime).getTime());
     } catch (error) {
         console.error("Failed to fetch upcoming contests:", error);
     }
