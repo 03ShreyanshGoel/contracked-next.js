@@ -2,6 +2,8 @@
 
 **Your all-in-one platform to track coding contests, analyze performance, and showcase your competitive programming journey!**
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-green?style=for-the-badge&logo=vercel)](https://contracked.vercel.app)
+
 ConTracked is a full-stack web app that aggregates contests from multiple platforms and gives users a beautiful dashboard to manage contests, view analytics, and upload or find solutions.
 
 ---
@@ -27,11 +29,11 @@ ConTracked is a full-stack web app that aggregates contests from multiple platfo
 
 ---
 
-### 🔍 Contest Listings with Filters
+### 📅 Detailed Contest View
 
-![Contest Listings](https://github.com/user-attachments/assets/71f42f2e-add2-4df9-acf2-4d1c7f4bc77a)
+![Contest Details](https://github.com/user-attachments/assets/71f42f2e-add2-4df9-acf2-4d1c7f4bc77a)
 
-> Browse contests with toggles for bookmarks, platforms, and solution status.
+> Each contest has a dedicated view with time info, direct links, and action options.
 
 ---
 
@@ -43,11 +45,11 @@ ConTracked is a full-stack web app that aggregates contests from multiple platfo
 
 ---
 
-### 📅 Detailed Contest View
+### 🔍 Contest Listings with Filters
 
-![Contest Details](https://github.com/user-attachments/assets/8fd0d1a1-9e80-4743-b0b0-86d1fac090b8)
+![Contest Listings](https://github.com/user-attachments/assets/8fd0d1a1-9e80-4743-b0b0-86d1fac090b8)
 
-> Each contest has a dedicated view with time info, direct links, and action options.
+> Browse contests with toggles for bookmarks, platforms, and solution status.
 
 ---
 
