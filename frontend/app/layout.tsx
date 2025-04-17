@@ -11,7 +11,7 @@ const bricolage = Bricolage_Grotesque({
 });
 
 export const metadata = {
-  title: "ContestMaster",
+  title: "ConTracked",
   description: "Master Competitive Programming",
 };
 
