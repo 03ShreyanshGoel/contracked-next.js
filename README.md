@@ -1,4 +1,4 @@
-# <img src="https://github.com/user-attachments/assets/067828ba-2977-4d5b-99c6-cca4a3fad048" width="32" alt="Contracked Logo" /> ConTracked
+# <img src="https://github.com/user-attachments/assets/067828ba-2977-4d5b-99c6-cca4a3fad048" width="57" alt="Contracked Logo" /> ConTracked
 
 > Your all-in-one platform to track coding contests, analyze performance, and showcase your competitive programming journey!
 
