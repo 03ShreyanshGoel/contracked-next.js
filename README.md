@@ -1,6 +1,6 @@
-# 🚀 ConTracked
+# <img src="https://github.com/user-attachments/assets/067828ba-2977-4d5b-99c6-cca4a3fad048" width="64" alt="Contracked Logo" /> ConTracked
 
-**Your all-in-one platform to track coding contests, analyze performance, and showcase your competitive programming journey!**
+> Your all-in-one platform to track coding contests, analyze performance, and showcase your competitive programming journey!
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-green?style=for-the-badge&logo=vercel)](https://contracked.vercel.app)
 
@@ -13,11 +13,6 @@ ConTracked is a full-stack web app that aggregates contests from multiple platfo
 - 🗓️ **Track Coding Contests**: Stay up to date with upcoming, ongoing, and past contests.
 - ⚙️ **Advanced Filtering**: Filter contests by platform, bookmarked status, and solution availability.
 - 📌 **Bookmark Contests**: Save contests for quick access # ConTracked
-
-<img src="https://github.com/user-attachments/assets/067828ba-2977-4d5b-99c6-cca4a3fad048" width="64" alt="Contracked Logo" />
-
-
-> A unified platform for competitive programmers to track contests, analyze performance, and improve coding skills
 
 ## 🌐 Live Demo
 
