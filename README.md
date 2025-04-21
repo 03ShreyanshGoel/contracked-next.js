@@ -1,11 +1,8 @@
-<style>
-@import ('~lucide-static/font/Lucide.css');
-</style>
 # <img src="https://github.com/user-attachments/assets/067828ba-2977-4d5b-99c6-cca4a3fad048" width="64" alt="Contracked Logo" /> ConTracked
 
 > Your all-in-one platform to track coding contests, analyze performance, and showcase your competitive programming journey!
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-green?style=for-the-badge&logo=vercel)](https://contracked.vercel.app)<div class="icon-external-link"></div>
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-blue?style=for-the-badge&logo=vercel)](https://contracked.vercel.app)
 
 ConTracked is a full-stack web app that aggregates contests from multiple platforms and gives users a beautiful dashboard to manage contests, view analytics, and upload or find solutions.
 
