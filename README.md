@@ -69,24 +69,32 @@ Built with modern web technologies, ConTracked offers a seamless user experience
 
 ## 📸 Screenshots
 
+
+
+
 ### Landing Page
-![Landing Page](./screenshots/landing-page.png)
+![Landing Page](https://github.com/user-attachments/assets/139cd345-5840-4d39-bebc-b8ca5a31052c)
+
 *Master Competitive Programming - Track contests, explore solutions, code smarter*
 
 ### Profile Dashboard (Light Mode)
-![Profile Dashboard Light](./screenshots/profile-dashboard-light.png)
+![Profile Dashboard Light](https://github.com/user-attachments/assets/d316b1b2-8b02-46e9-9a8c-cb226042136a)
+
 *Profile dashboard showing platform connections, rating progress, and solved problems visualization*
 
 ### Profile Dashboard (Dark Mode)
-![Profile Dashboard Dark](./screenshots/profile-dashboard-dark.png)
+![Profile Dashboard Dark](https://github.com/user-attachments/assets/381e1981-8e9e-45b5-8479-231bf48e016d)
+
 *Dark mode version of the profile dashboard with the same powerful analytics*
 
 ### Contests Page
-![Contests Page](./screenshots/contests-page.png)
+![Contests Page](https://github.com/user-attachments/assets/6ea3ec17-fee3-497a-9b50-d67ea7e907da)
+
 *View upcoming contests with detailed information about duration and start times*
 
 ### Past Contests
-![Past Contests](./screenshots/past-contests.png)
+![Past Contests](https://github.com/user-attachments/assets/5bcddf8f-7802-448e-aa12-b1e16cedf5cc)
+
 *Explore past contests with bookmarking and filtering options*
 
 ## 🛠️ Technical Implementation
