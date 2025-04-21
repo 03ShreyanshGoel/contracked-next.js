@@ -1,26 +1,12 @@
-# ConTracked
+# <img src="https://github.com/user-attachments/assets/067828ba-2977-4d5b-99c6-cca4a3fad048" width="64" alt="Contracked Logo" /> ConTracked
 
-![ConTracked Logo](https://github.com/yourusername/contracked/raw/main/public/images/logo.png)
+> Your all-in-one platform to track coding contests, analyze performance, and showcase your competitive programming journey!
 
-> A unified platform for competitive programmers to track contests, analyze performance, and improve coding skills
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-blue?style=for-the-badge&logo=vercel)](https://contracked.vercel.app)
 
-## 🌐 Live Demo
+ConTracked is a full-stack web app that aggregates contests from multiple platforms and gives users a beautiful dashboard to manage contests, view analytics, and upload or find solutions.
 
-**[https://contracked.vercel.app](https://contracked.vercel.app)**
-
-Experience the full functionality of ConTracked by visiting our live demo. Connect your competitive programming accounts, track upcoming contests, and analyze your performance across platforms.
-
-## 📖 About
-
-ConTracked is a comprehensive web application designed for competitive programmers who participate in contests across multiple platforms like Codeforces, CodeChef, and LeetCode. The application provides a unified interface to:
-
-- Track upcoming and past coding contests
-- Monitor performance across different platforms
-- View detailed analytics of solved problems and rating progression
-- Access contest solutions and coding resources
-- Connect multiple competitive programming accounts in one place
-
-Built with modern web technologies, ConTracked offers a seamless user experience with responsive design and dark/light mode support.
+---
 
 ## 🚀 Features
 
@@ -55,25 +41,35 @@ Built with modern web technologies, ConTracked offers a seamless user experience
 
 ## 📸 Screenshots
 
+
+
+
 ### Landing Page
-![Landing Page](./screenshots/landing-page.png)
-*Master Competitive Programming - Track contests, explore solutions, code smarter*
+> *Master Competitive Programming - Track contests, explore solutions, code smarter*
+
+![Landing Page](https://github.com/user-attachments/assets/139cd345-5840-4d39-bebc-b8ca5a31052c)
 
 ### Profile Dashboard (Light Mode)
-![Profile Dashboard Light](./screenshots/profile-dashboard-light.png)
-*Profile dashboard showing platform connections, rating progress, and solved problems visualization*
+> *Profile dashboard showing platform connections, rating progress, and solved problems visualization*
+
+![Profile Dashboard Light](https://github.com/user-attachments/assets/d316b1b2-8b02-46e9-9a8c-cb226042136a)
+
+
 
 ### Profile Dashboard (Dark Mode)
-![Profile Dashboard Dark](./screenshots/profile-dashboard-dark.png)
-*Dark mode version of the profile dashboard with the same powerful analytics*
+> *Dark mode version of the profile dashboard with the same powerful analytics*
+
+![Profile Dashboard Dark](https://github.com/user-attachments/assets/381e1981-8e9e-45b5-8479-231bf48e016d)
 
 ### Contests Page
-![Contests Page](./screenshots/contests-page.png)
-*View upcoming contests with detailed information about duration and start times*
+> *View upcoming contests with detailed information about duration and start times*
+
+![Contests Page](https://github.com/user-attachments/assets/6ea3ec17-fee3-497a-9b50-d67ea7e907da)
 
 ### Past Contests
-![Past Contests](./screenshots/past-contests.png)
-*Explore past contests with bookmarking and filtering options*
+> *Explore past contests with bookmarking and filtering options*
+
+![Past Contests](https://github.com/user-attachments/assets/5bcddf8f-7802-448e-aa12-b1e16cedf5cc)
 
 ## 🛠️ Technical Implementation
 
