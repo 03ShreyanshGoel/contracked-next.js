@@ -60,7 +60,7 @@ ConTracked is a full-stack web app that aggregates contests from multiple platfo
 > *Dark mode version of the profile dashboard with the same powerful analytics*
 
 ![Profile Dashboard Dark](https://github.com/user-attachments/assets/381e1981-8e9e-45b5-8479-231bf48e016d)
-<img src="https://github.com/user-attachments/assets/381e1981-8e9e-45b5-8479-231bf48e016d" alt="Profile Dashboard Dark"/>
+<img src="https://github.com/user-attachments/assets/381e1981-8e9e-45b5-8479-231bf48e016d" alt="Profile Dashboard Dark" width="250px"/>
 
 ### Contests Page
 > *View upcoming contests with detailed information about duration and start times*
