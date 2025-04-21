@@ -8,41 +8,40 @@ ConTracked is a full-stack web app that aggregates contests from multiple platfo
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-### Contest Tracking
-- **Comprehensive Contest Page**: Monitor upcoming contests with real-time countdown timers
-- **Advanced Filtering**: Filter past contests by time period (week/month/year)
-- **Bookmarking System**: Toggle bookmarks on contests for quick access
-- **Solution Availability Filter**: Filter contests that have solutions available
+### 🗓️ Contest Tracking
+- 📅 **Comprehensive Contest Page**: Monitor upcoming contests with real-time countdowns  
+- 🔎 **Advanced Filtering**: Filter past contests by week/month/year  
+- 🔖 **Bookmarking System**: Quickly save and revisit contests  
+- ✅ **Solution Filter**: Easily find contests with available solutions  
 
-### User Authentication
-- **Role-based Access**: Implemented using NextAuth with Google provider
-- **Admin Privileges**: Special access for uploading and managing contest solutions
-- **Secure Sessions**: Protected routes and authenticated API endpoints
+### 🔐 User Authentication
+- 🧑‍💻 **Role-based Access**: Google OAuth login via NextAuth  
+- 🛡️ **Admin Privileges**: Upload/manage contest solutions  
+- 🔒 **Secure Sessions**: Authenticated API access & route protection  
 
-### Profile Dashboard
-- **Platform Linking**: Connect accounts from Codeforces, CodeChef, and LeetCode
-- **Cross-Platform Analytics**: Unified view of performance across all linked platforms
-- **Data Visualization**: Interactive charts showing progress and statistics
-- **Rating History**: Detailed graph of rating changes with contest participation markers
+### 👤 Profile Dashboard
+- 🔗 **Platform Linking**: Connect Codeforces, CodeChef & LeetCode  
+- 📊 **Unified Analytics**: Cross-platform stats in one place  
+- 📈 **Rating History**: Graph showing changes over time  
+- 🧩 **Interactive Charts**: Visuals for progress, problems, and more  
 
-### Analytics System
-- **Doughnut Chart**: Visual representation of solved problems distribution across platforms
-- **Rating History Graph**: Interactive timeline with tooltips showing contest participation
-- **Profile Statistics**: Detailed metrics displaying max rating, current rating, problems solved, and contests participated
-- **Platform Selector**: Filter statistics by specific coding platform
+### 📈 Analytics System
+- 🍩 **Doughnut Chart**: Platform-wise problem-solving distribution  
+- 🕓 **Rating History Graph**: Timeline view with contest highlights  
+- 🧮 **Detailed Stats**: Max rating, solved count, contests participated  
+- 🎯 **Platform Selector**: View data platform-wise  
 
-### User Interface
-- **Responsive Design**: Fully responsive UI that works on desktop and mobile devices
-- **Dark/Light Mode Toggle**: Switch between themes based on preference
-- **Modern UI Components**: Built with Tailwind CSS for consistent styling
-- **Intuitive Navigation**: Easy access to all major features
+### 🖥️ User Interface
+- 📱 **Responsive Design**: Works smoothly on mobile & desktop  
+- 🌗 **Dark/Light Mode**: Theme toggle built-in  
+- 🧩 **Tailwind UI Components**: Modern, sleek design system  
+- 🧭 **Intuitive Navigation**: Simple, user-first layout  
+
+---
 
 ## 📸 Screenshots
-
-
-
 
 ### Landing Page
 > *Master Competitive Programming - Track contests, explore solutions, code smarter*
@@ -73,92 +72,97 @@ ConTracked is a full-stack web app that aggregates contests from multiple platfo
 
 ## 🛠️ Technical Implementation
 
-### Frontend
-- **Next.js**: Server-side rendering and static generation for optimal performance
-- **TypeScript**: Type-safe code to prevent runtime errors and improve developer experience
-- **Tailwind CSS**: Utility-first CSS framework for responsive and customizable design
-- **Chart.js**: Data visualization library for interactive analytics charts
-- **NextAuth.js**: Authentication solution integrated with Google provider
+### 🧑‍🎨 Frontend
+- ⚡ **Next.js** – Server-side rendering & static site generation  
+- 🔡 **TypeScript** – Type-safe code for better reliability  
+- 🎨 **Tailwind CSS** – Modern utility-first styling  
+- 📊 **Chart.js** – Stunning charts & graphs  
+- 🔐 **NextAuth.js** – Seamless auth with Google  
 
-### Backend
-- **Node.js**: JavaScript runtime for the server environment
-- **Express**: Web framework for handling API requests
-- **RESTful API**: Well-structured endpoints for efficient data flow between frontend and backend
-- **Cross-Platform Integration**: API connections to Codeforces, CodeChef, and LeetCode
+### 🧑‍💻 Backend
+- 🟢 **Node.js** – High-performance server runtime  
+- 🔧 **Express** – Simplified API handling  
+- 🔗 **RESTful APIs** – Efficient frontend-backend flow  
+- 🔌 **Platform APIs** – Integrated with Codeforces, CodeChef, LeetCode  
 
-### Database
-- **PostgreSQL**: Robust relational database for data persistence
-- **Prisma ORM**: Type-safe database client for simplified database operations
-- **Data Models**: Structured schema for users, contests, solutions, and platform connections
+### 🗃️ Database
+- 🐘 **PostgreSQL** – Reliable SQL database  
+- 🧬 **Prisma ORM** – Type-safe DB access & migrations  
+- 📂 **Structured Models** – Users, contests, solutions & connections  
 
-### Deployment
-- **Vercel**: Frontend deployment with CI/CD integration
-- **Render**: Backend service hosting
-- **Database Hosting**: PostgreSQL instance for production data
+### 🚀 Deployment
+- ▲ **Vercel** – Frontend hosting with CI/CD  
+- 🧾 **Render** – Backend deployment  
+- 🗄️ **PostgreSQL Hosting** – Managed production DB  
+
+---
 
 ## 🔮 Upcoming Features
 
-- **Auto-fetch Solutions**: Automatically fetch solutions from YouTube and other sources
-- **Coding Discussions**: Forum-like section for discussing contest problems and solutions
-- **AI Profile Analyzer**: AI-powered insights and recommendations based on your profile statistics
-- **Integrated Code Editor**: Practice coding with an integrated editor environment
+- 🤖 **Auto-fetch Solutions** from YouTube and other sources  
+- 💬 **Coding Discussions** for problem-solving conversations  
+- 🧠 **AI Profile Analyzer** to recommend improvements  
+- 🧑‍💻 **Integrated Code Editor** for in-browser practice  
 
-## 🚀 Getting Started
+---
 
-### Prerequisites
+## 🧑‍🏫 Getting Started
 
+### ✅ Prerequisites
 - Node.js 16+
 - PostgreSQL
-- Google OAuth credentials (for authentication)
+- Google OAuth credentials
 
-### Installation
+### ⚙️ Installation
 
-1. Clone the repository
+1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/contracked.git
    cd contracked
    ```
 
-2. Install dependencies
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. Set up environment variables
+3. **Set environment variables**
    ```bash
    cp .env.example .env.local
-   # Edit .env.local with your configuration including:
-   # - Database connection string
-   # - NextAuth secret
-   # - Google OAuth credentials
-   # - API endpoints
+   # Edit .env.local with your DB string, Google OAuth, NextAuth secret, API URLs
    ```
 
-4. Set up the database
+4. **Set up the database**
    ```bash
    npx prisma migrate dev
    ```
 
-5. Start the development server
+5. **Run development server**
    ```bash
    npm run dev
    ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser
+6. **Visit:** [http://localhost:3000](http://localhost:3000)
 
-## 📝 License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📄 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file.
+
+---
 
 ## 👨‍💻 Author
 
 - [Shreyansh Goel](https://github.com/03ShreyanshGoel)
 
+---
+
 ## 🙏 Acknowledgements
 
-- The competitive programming community
-- APIs provided by Codeforces, CodeChef, and LeetCode
-- [Chart.js](https://www.chartjs.org/) for the visualization components
-- [Tailwind CSS](https://tailwindcss.com/) for the styling framework
-- [Next.js](https://nextjs.org/) for the React framework
-- [Prisma](https://www.prisma.io/) for the database ORM
+- ❤️ The competitive programming community  
+- 📡 APIs from Codeforces, CodeChef, LeetCode  
+- 📊 [Chart.js](https://www.chartjs.org/)  
+- 🎨 [Tailwind CSS](https://tailwindcss.com/)  
+- ⚛️ [Next.js](https://nextjs.org/)  
+- 🧬 [Prisma](https://www.prisma.io/)  
