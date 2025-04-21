@@ -52,25 +52,22 @@ ConTracked is a full-stack web app that aggregates contests from multiple platfo
 ### Profile Dashboard (Light Mode)
 > *Profile dashboard showing platform connections, rating progress, and solved problems visualization*
 
-![Profile Dashboard Light](https://github.com/user-attachments/assets/d316b1b2-8b02-46e9-9a8c-cb226042136a)
+<img alt="Profile Dashboard Light" src="https://github.com/user-attachments/assets/d316b1b2-8b02-46e9-9a8c-cb226042136a"/>
 
 
 
 ### Profile Dashboard (Dark Mode)
 > *Dark mode version of the profile dashboard with the same powerful analytics*
-
-![Profile Dashboard Dark](https://github.com/user-attachments/assets/381e1981-8e9e-45b5-8479-231bf48e016d)
 <img src="https://github.com/user-attachments/assets/381e1981-8e9e-45b5-8479-231bf48e016d" alt="Profile Dashboard Dark" width="700px"/>
 
 ### Contests Page
 > *View upcoming contests with detailed information about duration and start times*
-
-![Contests Page](https://github.com/user-attachments/assets/6ea3ec17-fee3-497a-9b50-d67ea7e907da)
+<img src="https://github.com/user-attachments/assets/6ea3ec17-fee3-497a-9b50-d67ea7e907da" alt="Contests Page" width="700px"/>
 
 ### Past Contests
 > *Explore past contests with bookmarking and filtering options*
 
-![Past Contests](https://github.com/user-attachments/assets/5bcddf8f-7802-448e-aa12-b1e16cedf5cc)
+<img alt="Past Contests" src="https://github.com/user-attachments/assets/5bcddf8f-7802-448e-aa12-b1e16cedf5cc"/>
 
 ## 🛠️ Technical Implementation
 
