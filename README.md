@@ -8,18 +8,6 @@ ConTracked is a full-stack web app that aggregates contests from multiple platfo
 
 ---
 
-## 📖 About
-
-ConTracked is a comprehensive web application designed for competitive programmers who participate in contests across multiple platforms like Codeforces, CodeChef, and LeetCode. The application provides a unified interface to:
-
-- Track upcoming and past coding contests
-- Monitor performance across different platforms
-- View detailed analytics of solved problems and rating progression
-- Access contest solutions and coding resources
-- Connect multiple competitive programming accounts in one place
-
-Built with modern web technologies, ConTracked offers a seamless user experience with responsive design and dark/light mode support.
-
 ## 🚀 Features
 
 ### Contest Tracking
