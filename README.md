@@ -14,8 +14,7 @@ ConTracked is a full-stack web app that aggregates contests from multiple platfo
 - ⚙️ **Advanced Filtering**: Filter contests by platform, bookmarked status, and solution availability.
 - 📌 **Bookmark Contests**: Save contests for quick access # ConTracked
 
-![ConTracked Logo](https://github.com/user-attachments/assets/067828ba-2977-4d5b-99c6-cca4a3fad048)
-<img src="https://github.com/user-attachments/assets/067828ba-2977-4d5b-99c6-cca4a3fad048" width="300" alt="Contracked Logo" />
+<img src="https://github.com/user-attachments/assets/067828ba-2977-4d5b-99c6-cca4a3fad048" width="64" alt="Contracked Logo" />
 
 
 > A unified platform for competitive programmers to track contests, analyze performance, and improve coding skills
