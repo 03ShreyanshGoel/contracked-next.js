@@ -7,8 +7,21 @@ import { updateContests } from './cron/updateContests';
 dotenv.config();
 
 const app = express();
+const allowedOrigins = [
+    "http://localhost:3000", 
+    "https://contracked.vercel.app"
+]
 app.use(cors({
-    origin: 'https://contracked.vercel.app'
+    // origin: 'https://contracked.vercel.app'
+    origin: (origin,callback)=>{
+        if(!origin) return callback(null, true);
+        if(allowedOrigins.includes(origin)){
+            return callback(null, true);
+        }else{
+            return callback(new Error("Not allowed by CORS"));
+        }
+    },
+    credentials:true,
 }));
 
 app.use(express.json());

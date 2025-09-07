@@ -21,9 +21,11 @@ export interface RatingEntry {
     contestTitle?: string;
 }
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+
 export async function fetchProfile(platform: string, userId: string): Promise<ProfileData> {
     try {
-        const response = await axios.get(`http://localhost:5000/api/profiles/${platform}/${userId}`);
+        const response = await axios.get(`${API_BASE_URL}/api/profiles/${platform}/${userId}`);
         console.log("printing response", response.data);
         return response.data;
     } catch (error: unknown) {
